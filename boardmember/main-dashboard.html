@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard1.css">
+    <title>Dashboard </title>
+</head>
+
+<body>
+    <!--Nav starts here-->
+    <div class="nav">
+        <a class="" href="#"><img class="" src="../asset/imgs/logoBlack.svg" alt='logo'></a>
+        <div style="display:flex; justify-content:center; align-items:center" class="">
+            <div class=""><img style="background-color:#6D6E710D; padding:6px; width:25px; border-top-left-radius: 4px; 
+                border-bottom-left-radius: 4px; margin-top: 5px;" src="../asset/icons/Search.svg" alt="search"></div>
+            <input
+                style="border:none; outline:none; font-family: Muli, SemiBold; font-size: 15px; opacity: 52%; 
+            width: 300px; text-align: left; background-color:#6D6E710D; padding:7px; border-radius: 4px; margin-right: 8px;"
+                type="search" name="search" placeholder="Search By Project">
+            <button style="border-radius: 4px; background-color:#56c5d0; padding:7px 12px; border:none; outline:none; color:#fff; 
+            font-size: 12px; cursor: pointer;" class="searchTable">Search</button>
+        </div>
+        <div class="mail">
+            <select>
+                <option>boardmember@brainsandhammers.com</option>
+                <option>boardmember@brainsandhammers.com</option>
+            </select>
+            <button>Log Out</button>
+        </div>
+    </div>
+    <!--Nav ends here-->
+
+    <!--values starts here-->
+    <div class="values">
+        <div class="heading">
+            <div class="txt">Dashboard</div>
+            <div class="text">Dashboard</div>
+            <div class="calendar">
+                <img src="../asset/icons/Calendar2.svg" alt="calendar2">
+                <div class="time">Last updated - <span>20 May 2022</span></div>
+            </div>
+        </div>
+        <div class="valueDiv">
+            <div class="val">
+                <div class="users">
+                    <img src="../asset/icons/users.svg" alt="users" />
+                    <div><img src="../asset//icons/rise.svg" alt="rise1"> <span>14%</span></div>
+                </div>
+                <div class="cust">Customers</div>
+                <div class="num"><span class="number">657</span></div>
+            </div>
+
+            <div class="val">
+                <div class="users">
+                    <img src="../asset/icons/graphRise.svg" alt="users" />
+                    <div><img src="../asset//icons/rise.svg" alt="rise2"> <span>3%</span></div>
+                </div>
+                <div class="cust">Revenue</div>
+                <div class="num">&#8358;8.3 <sub>B</sub></div>
+            </div>
+
+            <div class="val">
+                <div class="users">
+                    <img src="../asset/icons/open.svg" alt="open" />
+                    <div><img src="../asset//icons/fall.png" alt="fall"> <span>7.5%</span></div>
+                </div>
+                <div class="cust">overhead</div>
+                <div class="num">&#8358;8.3 <sub>M</sub></div>
+            </div>
+
+            <div class="val">
+                <div class="users">
+                    <img src="../asset/icons/buy.svg" alt="buy" />
+                    <div><img src="../asset//icons/rise.svg" alt="rise3"> <span>7.5%</span></div>
+                </div>
+                <div class="cust">Sales</div>
+                <div class="num"><span class="number">&#8358;789</span> <sub>M</sub></div>
+            </div>
+        </div>
+    </div>
+    <!--values end here-->
+
+    <!--stats1 starts here-->
+    <div class="stat1">
+        <div class="projectDiv">
+            <div class="project">
+                <div class="pro">
+                    <div class="toText">Total Projects <br> <span>Number of projects since inception</span></div>
+                    <div class="proNum">&#8358;65</div>
+                </div>
+                <div class="comp">
+                    <span>Completed projects</span>
+                    <div class="nums">
+                        <span style="color:#188b96; font-weight:bold; font-size:12px;" class="compNum">42</span>
+                        <span style="color:#188b96; font-weight:bold; font-size:12px;" class="progressValue">74%</span>
+                    </div>
+                    <div class="projectProgress">
+                        <div class="projectProgressInner"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="project2">
+                <div class="pro">
+                    <div class="toText">Total Budget <br> <span>Allocated budget for 2021</span></div>
+                    <div class="proNum">&#8358;750 <sub>M</sub></div>
+                </div>
+                <div class="comp">
+                    <div style="display:flex; justify-content: space-between; align-items: center;">
+                        <span>Amount Spent</span>
+                        <span>utilized</span>
+                    </div>
+
+                    <div class="nums">
+                        <span style="color:#188b96; font-weight:bold; font-size:12px;"
+                            class="compNum">&#8358;359,876,990.00</span>
+                        <span style="color:#188b96; font-weight:bold; font-size:12px;" class="progressValue">52%</span>
+                    </div>
+                    <div class="budgetProgress">
+                        <div class="budgetProgressInner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overhead">
+            <div class="overText">Overhead by top projetcs <br> <span>Top 5 projects are captured</span></div>
+            <canvas id="overheadChart" width="200" height="200"></canvas>
+        </div>
+        <div class="property">
+            <div class="pro">
+                <div class="toText">Property Inventory <br> <span>property summary</span></div>
+                <div class="proNum">245 <br> <span>Total number of properties</span></div>
+            </div>
+            <div class="propertyValue">&#8358;17,567,998,536</div>
+            <p style="width:100%; text-align:center; color:#6d6e71; font-size: 12px; font-family: 'Mulish', sans-serif;
+            font-weight: 400; ">Total property value</p>
+            <div class="soldDiv">
+                <div class="sold">
+                    <span
+                        style="color:#188b96; font-weight:bold; font-size:12px; margin-bottom: 6px; width:100%;">Available
+                        Properties</span> <br />
+                    <span class="availableProperties"
+                        style="color:#3d3d3e; font-weight:bold; font-size:18px; margin-bottom: 6px;">93</span>
+                </div>
+                <div class="sold">
+                    <span
+                        style="color:#188b96; font-weight:bold; font-size:12px; margin-bottom: 6px; width:100%;">Sold</span>
+                    <br />
+                    <span class="soldProperties"
+                        style="color:#3d3d3e; font-weight:bold; font-size:18px; margin-bottom: 6px;">52</span>
+                </div>
+                <div class="sold">
+                    <span
+                        style="color:#188b96; font-weight:bold; font-size:12px; margin-bottom: 6px; width:100%;">Remaining
+                        Value</span> <br />
+                    <span class="availableValue"
+                        style="color:#3d3d3e; font-weight:bold; font-size:18px; margin-bottom: 6px;">&#8358;2,945,365,778.00</span>
+                </div>
+                <div class="sold">
+                    <span style="color:#188b96; font-weight:bold; font-size:12px; margin-bottom: 6px; width:100%;">Sales
+                        Value</span> <br />
+                    <span class="salesValue"
+                        style="color:#3d3d3e; font-weight:bold; font-size:18px; margin-bottom: 6px;">&#8358;1,322,632758</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--stats1 ends here-->
+
+    <!--stats2 starts here-->
+    <div class="stat2">
+        <div class="stat2Div">
+            <div class="pro2">
+                <div class="toText2">Financial Position <br> <span>Revenue and Overhead consolidation</span> <br>
+                    <span class="time2">20 May 2022</span>
+                </div>
+                <div class="todayMenu">
+                    <img src="../asset/icons/settings.svg" alt="settings">
+                    <select>
+                        <option selected>Today</option>
+                        <option>Last week</option>
+                        <option>Last month</option>
+                        <option>Last year</option>
+                    </select>
+                </div>
+            </div>
+            <div style="width:100%; display: flex; justify-content: center;">
+                <canvas id="financeChart" width="400" height="200"></canvas>
+            </div>
+        </div>
+        <div class="stat2Divv">
+            <div class="pro2">
+                <div class="toText2">Financial Position by Category <br>
+                    <span>Overhead and Revenue by Bank</span>
+                </div>
+                <div class="todayMenu">
+                    <img src="../asset/icons/settings.svg" alt="settings">
+                    <select>
+                        <option selected>Today</option>
+                        <option>Last week</option>
+                        <option>Last month</option>
+                        <option>Last year</option>
+                    </select>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; width:100%;">
+                <div class="categoryChart1">
+                    <canvas id="categoryChart" width="300" height="200"></canvas>
+                    <p style="color:#188b96; font-weight:bold; font-size:12px; margin-top:6px; width:100%;
+                text-align:center;">&hyphen; Revenue &hyphen;</p>
+                </div>
+                <div class="categoryChart2">
+                    <canvas id="categoryChart2" width="300" height="200"></canvas>
+                    <p style="color:#188b96; font-weight:bold; font-size:12px; margin-top:6px; width:100%;
+                text-align:center;">&hyphen; Overhead &hyphen;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--stats2 ends here-->
+
+    <!--stats3 starts here-->
+    <div class="stat3">
+        <div class="stat3Div">
+            <div class="pro2">
+                <div class="toText2">Financial Position <br> <span>Revenue</span> <br>
+                    <span class="time2">20 May 2022</span>
+                </div>
+                <div class="todayMenu">
+                    <div class="buttons3"
+                        style="display:flex; justify-content: space-between; align-items: center; margin-right: 15px;">
+                        <button class="revenueTab">Revenue</button>
+                        <button class="overheadTab">overhead</button>
+                    </div>
+                    <div class="select" style="display:flex; justify-content: space-between; align-items: center;">
+                        <img style="width: 10px; margin-right: 4px;" src="../asset/icons/settings.svg" alt="settings">
+                        <select>
+                            <option selected>Today</option>
+                            <option>Last week</option>
+                            <option>Last month</option>
+                            <option>Last year</option>
+                        </select>
+                    </div>
+                    <button style="background-color:#56c5d0; color:#fff; border:none;
+                    outline:none; cursor:pointer; font-size:12px; padding:5px 14px; 
+                    border-radius:4px; margin-left:15px;" class="ViewBtn">View List</button>
+                </div>
+            </div>
+            <div class="financeChart22">
+                <canvas id="financeChart22" width="800" height="200"></canvas>
+            </div>
+            <div class="financeChart23">
+                <canvas id="financeChart23" width="800" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+    <!--stats3 ends here-->
+
+
+    <!--stats4 starts here-->
+    <div class="stat4">
+        <div class="stat4Div">
+            <div class="pro2">
+                <div class="toText2">Actual Vs Budget Resources By Project <br> <span>Revenue</span>
+                </div>
+            </div>
+            <div class="budgetChart">
+                <canvas id="budgetChart" width="800" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+    <!--stats4 ends here-->
+
+    <!--stats5 starts here-->
+    <div class="stat5">
+        <div class="stat5Div">
+            <div class="pro2">
+                <div class="toText2">Sales by Region <br> <span>Data captures Lagos and Abuja</span>
+                </div>
+            </div>
+            <div class="mapDiv">
+                <h1>MAP AREA</h1>
+            </div>
+        </div>
+    </div>
+    <!--stats5 ends here-->
+    <script src="../node_modules/chart.js/dist/chart.js"></script>
+    <script>
+
+        //data
+        const data = {
+            labels: [
+                '5% - APO 3 Procurement',
+                '10% - Life Camp Bristol.',
+                '10% - City infastructure',
+                '15% - Control city project',
+                '25% - Others',
+                '30% - Guzape project',
+            ],
+            datasets: [{
+                label: '# of Votes',
+                data: [10, 10, 10, 15, 25, 30],
+                backgroundColor: [
+                    '#1F7575',
+                    '#F3EA61',
+                    '#D13448',
+                    '#FFB1B1',
+                    '#9ECD2C',
+                    '#FFA100',
+                ],
+                hoverOffset: 10,
+
+            }],
+        }
+        //data
+        const dataTwo = {
+            labels: [
+                'UBA',
+                'JAIZ',
+                'TAJ',
+                'FIDELITY',
+                'SUNTRUST',
+                'ZENITH',
+            ],
+            datasets: [{
+                label: '',
+                data: [0, 300, 260, 350, 220, 380],
+                backgroundColor: [
+                    '#56c5d0',
+                ],
+                borderColor: '#188b96',
+                borderWidth: 3,
+                hoverOffset: 10,
+
+            }],
+        }
+        const dataThree = {
+            labels: [
+                '5% - APO 3 Procurement',
+                '10% - Life Camp Bristol.',
+                '10% - City infastructure',
+                '15% - Control city project',
+                '25% - Others',
+                '30% - Guzape project',
+            ],
+            datasets: [{
+                label: '# of Votes',
+                data: [10, 10, 10, 15, 25, 30],
+                backgroundColor: [
+                    '#1F7575',
+                    '#F3EA61',
+                    '#D13448',
+                    '#FFB1B1',
+                    '#9ECD2C',
+                    '#FFA100',
+                ],
+                hoverOffset: 10,
+
+            }],
+        }
+        const dataFour = {
+            labels: [
+                '5% - APO 3 Procurement',
+                '10% - Life Camp Bristol.',
+                '10% - City infastructure',
+                '15% - Control city project',
+                '25% - Others',
+                '30% - Guzape project',
+            ],
+            datasets: [{
+                label: '# of Votes',
+                data: [10, 10, 10, 15, 25, 30],
+                backgroundColor: [
+                    '#1F7575',
+                    '#F3EA61',
+                    '#D13448',
+                    '#FFB1B1',
+                    '#9ECD2C',
+                    '#FFA100',
+                ],
+                hoverOffset: 10,
+
+            }],
+        }
+        const dataFive = {
+            labels: [
+                'CITY REVENUE -UBA',
+                'CITY REVENUE',
+                'BRADFORD CITY REV. -UBA',
+                'B & City Project Revenue APG',
+                'City Project 2- Fidelity',
+                'Main Account: Revenue',
+                'CITY REVENUE -UBA',
+                'CITY REVENUE',
+                'BRADFORD CITY REV',
+                'B & City Project Revenue APG',
+                'City Project 2- Fidelity',
+                'Main Account: Revenue',
+            ],
+            datasets: [{
+                label: '',
+                data: [90, 250, 110, 190, 90, 130, 250, 150, 120, 440, 460, 100],
+                backgroundColor: [
+                    '#56c5d0',
+                ],
+                borderColor: '#188b96',
+                borderWidth: 3,
+                hoverOffset: 10,
+
+            }],
+        }
+        const dataSix = {
+            labels: [
+                'CITY REVENUE -UBA',
+                'CITY REVENUE',
+                'BRADFORD CITY REV. -UBA',
+                'B & City Project Revenue APG',
+                'City Project 2- Fidelity',
+                'Main Account: Revenue',
+                'CITY REVENUE -UBA',
+                'CITY REVENUE',
+                'BRADFORD CITY REV',
+                'B & City Project Revenue APG',
+                'City Project 2- Fidelity',
+                'Main Account: Revenue',
+            ],
+            datasets: [{
+                label: '',
+                data: [150, 120, 440, 460, 90, 250, 110, 190, 90, 130, 250, 500],
+                backgroundColor: [
+                    '#56c5d0',
+                ],
+                borderColor: '#188b96',
+                borderWidth: 3,
+                hoverOffset: 10,
+
+            }],
+        }
+        const dataSeven = {
+            labels: [
+                'CITY REVENUE -UBA',
+                'CITY REVENUE',
+                'BRADFORD CITY REV. -UBA',
+                'B & City Project Revenue APG',
+                'City Project 2- Fidelity',
+                'Main Account: Revenue',
+                'CITY REVENUE -UBA',
+                'CITY REVENUE',
+                'BRADFORD CITY REV',
+                'B & City Project Revenue APG',
+                'City Project 2- Fidelity',
+                'Main Account: Revenue',
+            ],
+            datasets: [{
+                label: '',
+                data: [150, 120, 440, 460, 90, 250, 110, 190, 90, 130, 250, 500],
+                backgroundColor: [
+                    '#E2F1F240',
+                ],
+                borderColor: '#188b96',
+                borderWidth: 3,
+                hoverOffset: 10,
+                fill: true,
+                tension: 0.4,
+            }],
+        }
+
+        //config
+        const config = {
+            type: 'doughnut',
+            data,
+            options: {
+
+            }
+        }
+        const configTwo = {
+            type: 'line',
+            data: dataTwo,
+            options: {
+                Plugins: {
+                    legend: {
+                        display: false
+                    },
+                },
+                labels: {
+                    fontColor: '#1f7575'
+                }
+            }
+        }
+        const configThree = {
+            type: 'doughnut',
+            data: dataThree,
+            options: {
+
+            }
+        }
+        const configFour = {
+            type: 'doughnut',
+            data: dataFour,
+            options: {
+
+            }
+        }
+        const configFive = {
+            type: 'line',
+            data: dataFive,
+            options: {
+                Plugins: {
+                    legend: {
+                        display: false
+                    },
+                },
+                labels: {
+                    fontColor: '#1f7575'
+                }
+            }
+        }
+        const configSix = {
+            type: 'line',
+            data: dataSix,
+            options: {
+                Plugins: {
+                    legend: {
+                        display: false
+                    },
+                },
+                labels: {
+                    fontColor: '#1f7575'
+                }
+            }
+        }
+        const configSeven = {
+            type: 'line',
+            data: dataSeven,
+            options: {
+                Plugins: {
+                    legend: {
+                        display: false
+                    },
+                },
+                labels: {
+                    fontColor: '#1f7575'
+                }
+            }
+        }
+
+        //render innit block
+        const overheadChart = new Chart(document.getElementById('overheadChart').getContext('2d'),
+            config
+        );
+        const financeChart = new Chart(document.getElementById('financeChart').getContext('2d'),
+            configTwo
+        );
+        const categoryChart = new Chart(document.getElementById('categoryChart').getContext('2d'),
+            configThree
+        );
+        const categoryChart2 = new Chart(document.getElementById('categoryChart2').getContext('2d'),
+            configFour
+        );
+        const financeChart22 = new Chart(document.getElementById('financeChart22').getContext('2d'),
+            configFive
+        );
+        const financeChart23 = new Chart(document.getElementById('financeChart23').getContext('2d'),
+            configSix
+        );
+        const budgetChart = new Chart(document.getElementById('budgetChart').getContext('2d'),
+            configSeven
+        );
+
+
+        const revenueTab = document.querySelector('.revenueTab');
+        const overheadTab = document.querySelector('.overheadTab');
+        const financeChart222 = document.querySelector('.financeChart22');
+        const financeChart233 = document.querySelector('.financeChart23');
+        revenueTab.addEventListener('click', () => {
+            revenueTab.style.backgroundColor = "#56c5d0";
+            overheadTab.style.backgroundColor = "transparent";
+            financeChart222.style.display = "flex";
+            financeChart233.style.display = "none";
+        });
+        overheadTab.addEventListener('click', () => {
+            revenueTab.style.backgroundColor = "transparent";
+            overheadTab.style.backgroundColor = "#56c5d0";
+            financeChart222.style.display = "none";
+            financeChart233.style.display = "flex";
+        });
+    </script>
+</body>
+
+</html>

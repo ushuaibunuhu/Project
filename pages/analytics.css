@@ -1,0 +1,239 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.nav{
+    width:100%;
+    height: 40px;
+    padding:30px;
+    border-bottom: 1px solid #b1b1b1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.nav .navIcons{
+    display: flex;
+    align-items: flex-start;
+}
+.nav .navIcons a img{
+    width:60px;
+    margin-right: 10px;
+}
+.nav a img{
+    width:150px;
+}
+.nav .mail select{
+    border:none;
+    outline: none;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.nav .mail button{
+    padding: 4px 10px;
+    border-radius: 6px;
+    background-color: rgba(86, 197, 208,.3);
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    color:#3d3d3e;
+    text-align: center;
+    border:none;
+    outline:none;
+    cursor: pointer;
+}
+.values{
+    width:100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.values .heading{
+    width:auto;
+}
+.values .heading .txt{
+    color:#3d3d3e;
+    font-size: 12px;
+    font-weight:600;
+    font-family: 'Mulish', sans-serif;
+}
+.values .heading .text{
+    color:#6d6e71;
+    font-size: 22px;
+    font-weight:600;
+    font-family: 'Mulish', sans-serif;
+    margin-top: 30px;
+}
+.values .heading .configure{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #56C5D040;
+    color:#188B96;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 10px;
+    font-weight:600;
+    font-family: 'Mulish', sans-serif;
+}
+.values .valueDiv{
+    width:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Mulish', sans-serif;
+}
+.values .valueDiv .val{
+    width:130px;
+    height: 120px;
+    border-radius: 15px;
+    margin-left: 20px;
+    padding: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.val:nth-child(1){
+    background-color: #9ECD2C1A;
+}
+.val:nth-child(2){
+    background-color: #56C5D01A;
+}
+.values .valueDiv .val .users{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.values .valueDiv .val .cust{
+    font-size: 12px;
+    color:#3d3d3e;
+}
+.values .valueDiv .val .num{
+    font-size: 20px;
+    color:#3d3d3e;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.salesDiv{
+    padding:30px;
+    margin-top: 10px;
+    width:100%;
+    position: relative;
+    overflow: hidden;
+}
+.salesDiv .tabBtns{
+    width:100%;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #2323250d;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+}
+.salesDiv .tabBtns .btn{
+    font-size: 12px;
+    color:#188B96;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 4px 12px 8px 12px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 50px;
+}
+.line1, .line2, .line3, .line4{
+    background-color: #188B96;
+    width:40px;
+    height: 3px;
+    position: absolute;
+    top:25px;
+    display: none;
+}
+.line3{
+    display: block;
+}
+.tabDiv1, .tabDiv2, .tabDiv3, .tabDiv4{
+    margin-top: 30px;
+    width:100%;
+    display: none;
+}
+.tabDiv3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tabDiv4{
+    justify-content: space-between;
+}
+.tabDiv4 .sideDiv{
+    width:24%;
+}
+.tabDiv4 .sideDiv .side{
+    margin-bottom: 10px;
+    width:100%;
+    border-radius: 4px;
+    padding: 10px 10px;
+    font-size: 12px;
+    color:#3d3d3e;
+    font-family: 'Mulish', sans-serif;
+    background-color: #6D6E710D;
+    cursor: pointer;
+}
+.tabDiv4 .sideDiv .sideSelected{
+    background-color: #56C5D040;
+}
+.tabDiv4 .mainDiv{
+    width:70%;
+    background-color: #6D6E710D;
+    border-radius: 8px;
+    padding: 10px;
+}
+.tabDiv4 table{
+    width:100%;
+    border: none;
+    padding: 0;
+}
+.tabDiv4 table thead{
+    width:100%;
+    background-color: #fff;
+}
+.tabDiv4 table tbody{
+    width:100%;
+    text-align: center;
+    padding: 0;
+}
+.tabDiv4 table thead th{
+    font-size: 12px;
+    color:#6d6e71;
+    font-family: 'Mulish', sans-serif;
+    padding: 6px;
+}
+.tabDiv4 table tbody tr{
+    margin: 0;
+}
+.tabDiv4 table tbody td{
+    padding: 4px;
+    font-size: 12px;
+    color:#6d6e71;
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+}
+.tabDiv3 select{
+    padding: 4px 12px;
+    background-color: #6D6E710D;
+    border-radius: 4px;
+    font-size: 12px;
+    color:#3d3d3e;
+    font-family: 'Mulish', sans-serif;
+    border:none;
+    outline:none;
+    cursor: pointer;
+}

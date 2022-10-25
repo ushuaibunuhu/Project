@@ -1,0 +1,6 @@
+<svg id="Component_30_1" data-name="Component 30 – 1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <rect id="Rectangle_3533" data-name="Rectangle 3533" width="30" height="30" rx="6" fill="rgba(86,197,208,0.25)"/>
+  <g id="Arrow_-_Left" data-name="Arrow - Left" transform="translate(22 8.426) rotate(90)">
+    <path id="Arrow_-_Left-2" data-name="Arrow - Left" d="M5.612.024h0L5.6.028l-.008,0h0l-.011,0h0a.642.642,0,0,0-.243.15h0L.187,5.279a.624.624,0,0,0,0,.892.647.647,0,0,0,.834.06l.072-.061L5.146,2.161v11.1a.641.641,0,0,0,1.276.085l.006-.085V2.16L10.479,6.17a.648.648,0,0,0,.906,0,.625.625,0,0,0,.064-.822l-.062-.071L6.242.186A.644.644,0,0,0,5.788,0,.651.651,0,0,0,5.612.024Z" transform="translate(0 0)" fill="#188b96"/>
+  </g>
+</svg>

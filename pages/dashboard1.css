@@ -1,0 +1,537 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.nav{
+    width:100%;
+    height: 40px;
+    padding:30px;
+    border-bottom: 1px solid #b1b1b1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.nav .navIcons a img{
+    width:60px;
+    margin-right: 10px;
+}
+.nav a img{
+    width:150px;
+}
+.nav .mail select{
+    border:none;
+    outline: none;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.nav .mail button{
+    padding: 4px 10px;
+    border-radius: 6px;
+    background-color: rgba(86, 197, 208,.3);
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    color:#3d3d3e;
+    text-align: center;
+    border:none;
+    outline:none;
+    cursor: pointer;
+}
+.values{
+    width:100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.values .heading{
+    width:auto;
+}
+.values .heading .txt{
+    color:#3d3d3e;
+    font-size: 12px;
+    font-weight:600;
+    font-family: 'Mulish', sans-serif;
+}
+.values .heading .text{
+    color:#6d6e71;
+    font-size: 22px;
+    font-weight:600;
+    font-family: 'Mulish', sans-serif;
+    margin-top: 30px;
+}
+.values .heading .calendar{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.values .heading .calendar img{
+    width:25px;
+    margin-right: 8px;
+}
+.values .heading .calendar .time{
+    font-size: 12px;
+    font-weight: bold;
+    color:#6d6e71;
+}
+.values .valueDiv{
+    width:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Mulish', sans-serif;
+}
+.values .valueDiv .val{
+    width:130px;
+    height: 120px;
+    border-radius: 15px;
+    margin-left: 20px;
+    padding: 15px;
+    overflow: hidden;
+}
+.val:nth-child(1){
+    background-color: #D056A626;
+}
+.val:nth-child(2){
+    background-color: #D0CB5626;
+}
+.val:nth-child(3){
+    background-color: #56D09326;
+}
+.val:nth-child(4){
+    background-color: #5664D026;
+}
+.values .valueDiv .val .users{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.values .valueDiv .val .users img{
+    width:15px;
+}
+.values .valueDiv .val .users div img{
+    width:15px;
+}
+.values .valueDiv .val .users div span{
+    font-size: 12px;
+    color:#3d3d3e;
+    font-weight: 600;
+}
+.values .valueDiv .val .cust{
+    font-size: 12px;
+    color:#3d3d3e;
+}
+.values .valueDiv .val .num{
+    font-size: 20px;
+    color:#3d3d3e;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.stat1{
+    padding:30px;
+    margin-top: 10px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.stat1 .projectDiv{
+    width:27%;
+    display: flex;
+    flex-direction: column;
+}
+.stat1 .projectDiv .project{
+    background-color: #E2F1F240;
+    width:100%;
+    border-radius: 20px;
+    padding: 20px;
+}
+.stat1 .projectDiv .project2{
+    background-color: #E2F1F240;
+    width:100%;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.stat1 .projectDiv .project .pro{
+    width:100%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid #188b96;
+}
+.stat1 .projectDiv .project2 .pro{
+    width:100%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid #188b96;
+}
+.stat1 .projectDiv .project .pro .toText{
+    color:#188b96;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Mulish', sans-serif;
+}
+.overText{
+    color:#188b96;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 30px;
+}
+.overText span{
+    color:#6d6e71;
+    font-size: 12px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400; 
+}
+.stat1 .projectDiv .project2 .pro .toText{
+    color:#188b96;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Mulish', sans-serif;
+}
+.stat1 .projectDiv .project .pro .toText span{
+    color:#6d6e71;
+    font-size: 12px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400; 
+}
+.stat1 .projectDiv .project2 .pro .toText span{
+    color:#6d6e71;
+    font-size: 12px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400; 
+}
+.stat1 .projectDiv .project2 .pro .toText div span{
+    color:#6d6e71;
+    font-size: 12px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400; 
+}
+.stat1 .projectDiv .project .pro .proNum{
+    color:#3d3d3e;
+    font-weight: bold;
+    font-size: 20px;
+    padding:8px;
+    background-color:#56c5d040 ;
+    border-radius: 5px;
+}
+.stat1 .projectDiv .project .comp{
+    width:100%;
+    margin-top: 10px;
+}
+.stat1 .projectDiv .project .comp span{
+    color:#6d6e71;
+    font-size: 12px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400; 
+}
+
+.stat1 .projectDiv .project2 .pro .proNum{
+    color:#3d3d3e;
+    font-weight: bold;
+    font-size: 20px;
+    padding:8px;
+    background-color:#56c5d040 ;
+    border-radius: 5px;
+}
+.stat1 .projectDiv .project2 .comp{
+    width:100%;
+    margin-top: 10px;
+}
+.stat1 .projectDiv .project2 .comp span{
+    color:#6d6e71;
+    font-size: 12px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400; 
+}
+ .nums{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.comp .projectProgress{
+    width:100%;
+    background-color: #56c5d040;
+    height: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.comp .projectProgress .projectProgressInner{
+    background-color: #188b96;
+    width:74%;
+    height: 100%;
+}
+.comp .budgetProgress{
+    width:100%;
+    background-color: #56c5d040;
+    height: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.comp .budgetProgress .budgetProgressInner{
+    background-color: #188b96;
+    width:52%;
+    height: 100%;
+}
+.stat1 .overhead{
+    width:27%;
+    background-color: #E2F1F240;
+    border-radius: 20px;
+    padding:20px;
+}
+.stat1 .property{
+    width:43%;
+    background-color: #E2F1F240;
+    border-radius: 20px;
+    padding:20px;
+}
+.stat1 .property .pro{
+    width:100%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid #188b96;
+}
+.stat1 .property .pro .toText{
+    color:#188b96;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Mulish', sans-serif;
+}
+.stat1 .property .pro .toText span{
+    color:#6d6e71;
+    font-size: 12px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400; 
+}
+.stat1 .property .pro .proNum{
+    color:#188b96;
+    font-weight: bold;
+    font-size: 20px;
+}
+.stat1 .property .pro .proNum span{
+    color:#6d6e71;
+    font-size: 12px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400; 
+}
+.property .propertyValue{
+    text-align: center;
+    color:#188b96;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Mulish', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.property .soldDiv{
+    width:100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.property .soldDiv .sold{
+    width:48%;
+    border-radius: 8px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+.property .soldDiv .sold:nth-child(1){
+    background-color: #1F75751A;
+}
+.property .soldDiv .sold:nth-child(2){
+    background-color: #56C5D01A ;
+}
+.property .soldDiv .sold:nth-child(3){
+    background-color: #3D3D3E1A;
+}
+.property .soldDiv .sold:nth-child(4){
+    background-color: #9ECD2C1A;
+}
+.stat2{
+    padding:30px;
+    margin-top: 10px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.stat3{
+    padding:30px;
+    margin-top: 10px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.stat4{
+    padding:30px;
+    margin-top: 10px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.stat5{
+    padding:30px;
+    margin-top: 10px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.stat2 .stat2Div{
+    background-color: #E2F1F240;
+    width:49%;
+    border-radius: 20px;
+    padding: 20px;
+}
+.stat2 .stat2Divv{
+    background-color: #E2F1F240;
+    width:49%;
+    border-radius: 20px;
+    padding: 20px;
+}
+.stat3 .stat3Div{
+    background-color: #E2F1F240;
+    width:100%;
+    border-radius: 20px;
+    padding: 20px;
+    height: auto;
+}
+.stat4 .stat4Div{
+    background-color: #E2F1F240;
+    width:100%;
+    border-radius: 20px;
+    padding: 20px;
+    height: auto;
+}
+.stat5 .stat5Div{
+    background-color: #E2F1F240;
+    width:100%;
+    border-radius: 20px;
+    padding: 20px;
+    height: auto;
+}
+.stat2 .stat2Div .pro2, .stat2 .stat2Divv .pro2, .stat3 .stat3Div .pro2, .stat4 .stat4Div .pro2, 
+.stat5 .stat5Div .pro2{
+    width:100%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stat2 .stat2Div .pro2 .toText2, .stat2 .stat2Divv .pro2 .toText2, .stat3 .stat3Div .pro2 .toText2, .stat4
+ .stat4Div .pro2 .toText2,
+.stat5 .stat5Div .pro2 .toText2{
+    color:#188b96;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Mulish', sans-serif;
+}
+.stat2 .stat2Div .pro2 .toText2 span, .stat2 .stat2Divv .pro2 .toText2 span, .stat3 .stat3Div .pro2 .toText2 span, 
+.stat4 .stat4Div .pro2 .toText2 span,
+.stat5 .stat5Div .pro2 .toText2 span{
+    color:#6d6e71;
+    font-size: 12px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400; 
+}
+.stat2 .stat2Div .pro2 .toText2 .time2, .stat3 .stat3Div .pro2 .toText2 .time2{
+    color:#6d6e71;
+    font-size: 12px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600; 
+}
+.stat2 .stat2Div .pro2 .todayMenu, .stat2 .stat2Divv .pro2 .todayMenu, .stat3 .stat3Div .pro2 .todayMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stat2 .stat2Div .pro2 .todayMenu img, .stat2 .stat2Divv .pro2 .todayMenu img, .stat3 .stat3Div .pro2 .todayMenu img{
+    width: 10px;
+    margin-right: 4px;
+}
+.stat2 .stat2Div .pro2 .todayMenu .select select, .stat2 .stat2Divv .pro2 .todayMenu .select select,
+ .stat3 .sta32Div .pro2 .todayMenu .select select{
+    background-color: #56c5d040;
+    border-radius: 4px;
+    padding: 2px 0;
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
+.stat2 .stat2Div .pro2 .todayMenu .select select option, .stat2 .stat2Divv .pro2 .todayMenu .select select option,
+ .stat3 .stat3Div .pro2 .todayMenu .select select option{
+    background-color: red;
+    border-radius: 8px;
+    border:none;
+    margin-top: 8px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.2);
+}
+.stat2 .stat2Div .pro2 .todayMenu select, .stat3 .stat3Div .pro2 .todayMenu select{
+    background-color: #56c5d040;
+    border-radius: 4px;
+    padding: 2px 0;
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
+.stat2 .stat2Div .pro2 .todayMenu select option, .stat3 .stat3Div .pro2 .todayMenu select option{
+    background-color: #fff;
+    border-radius: 8px;
+    border:none;
+    margin-top: 8px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.2);
+}
+.revenueTab{
+    padding:5px 14px;
+    border-radius: 4px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    border:1px solid #188b96;
+    background-color: #56c5d0;
+    margin-right: 6px;
+}
+.overheadTab{
+    padding:5px 14px;
+    border-radius: 4px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    border:1px solid #56c5d0;
+    background-color: transparent;
+    margin-right: 8px;
+}
+.financeChart22{
+    width:100%; 
+    display: flex;
+     justify-content: center; 
+}
+.financeChart23{
+    width:100%; 
+    display: none;
+     justify-content: center; 
+}
+.budgetChart{
+    width:100%; 
+    display: flex;
+    justify-content: center; 
+}
+
+
