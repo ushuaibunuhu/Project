@@ -132,19 +132,20 @@
     font-weight: 600;
     margin-top: 15px;
 }
-.stat1{
+.stat1, .stat3{
     padding:30px;
     margin-top: 10px;
     width:100%;
     display: flex;
     justify-content: space-between;
 }
-.stat1 .projectDiv{
+.stat1 .projectDiv, .stat3 .projectDiv{
     width:27%;
     display: flex;
     flex-direction: column;
+    background-color: #E2F1F240;
 }
-.stat1 .projectDiv .project{
+.stat1 .projectDiv .project, .stat3 .projectDiv .project{
     background-color: #E2F1F240;
     width:100%;
     border-radius: 20px;
@@ -165,6 +166,14 @@
     align-items: center;
     border-bottom:1px solid #188b96;
 }
+.stat3 .projectDiv .project .pro{
+    width:100%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
 .stat1 .projectDiv .project2 .pro{
     width:100%;
     padding-bottom: 20px;
@@ -173,7 +182,7 @@
     align-items: center;
     border-bottom:1px solid #188b96;
 }
-.stat1 .projectDiv .project .pro .toText{
+.stat1 .projectDiv .project .pro .toText, .stat3 .projectDiv .project .pro .toText{
     color:#188b96;
     font-size: 16px;
     font-weight: 600;
@@ -198,7 +207,7 @@
     font-weight: 600;
     font-family: 'Mulish', sans-serif;
 }
-.stat1 .projectDiv .project .pro .toText span{
+.stat1 .projectDiv .project .pro .toText span, .stat3 .projectDiv .project .pro .toText span{
     color:#6d6e71;
     font-size: 12px;
     font-family: 'Mulish', sans-serif;
@@ -285,19 +294,19 @@
     width:52%;
     height: 100%;
 }
-.stat1 .overhead{
+.stat1 .overhead, .stat3 .overhead{
     width:27%;
     background-color: #E2F1F240;
     border-radius: 20px;
     padding:20px;
 }
-.stat1 .property{
+.stat1 .property, .stat3 .property{
     width:43%;
     background-color: #E2F1F240;
     border-radius: 20px;
     padding:20px;
 }
-.stat1 .property .pro{
+.stat1 .property .pro, .stat3 .overhead .pro{
     width:100%;
     padding-bottom: 20px;
     display: flex;
@@ -305,30 +314,44 @@
     align-items: center;
     border-bottom:1px solid #188b96;
 }
-.stat1 .property .pro .toText{
+.stat3 .property .pro{
+    width:100%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stat1 .property .pro .toText, .stat3 .property .pro .toText, .stat3 .overhead .pro .toText{
     color:#188b96;
     font-size: 16px;
     font-weight: 600;
     font-family: 'Mulish', sans-serif;
 }
-.stat1 .property .pro .toText span{
+.stat1 .property .pro .toText span ,.stat3 .property .pro .toText span, .stat3 .overhead .pro .toText span{
     color:#6d6e71;
     font-size: 12px;
     font-family: 'Mulish', sans-serif;
     font-weight: 400; 
 }
-.stat1 .property .pro .proNum{
+.stat1 .property .pro .proNum, .stat3 .overhead .pro .proNum{
     color:#188b96;
     font-weight: bold;
     font-size: 20px;
 }
-.stat1 .property .pro .proNum span{
+.stat1 .property .pro .proNum span, .stat3 .overhead .pro .proNum span{
     color:#6d6e71;
     font-size: 12px;
     font-family: 'Mulish', sans-serif;
     font-weight: 400; 
 }
-.property .propertyValue{
+.overhead .totalDiv{
+    width:100%;
+    border-radius: 8px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    background-color: #1F75751A;
+}
+.property .propertyValue, .overhead .propertyValue{
     text-align: center;
     color:#188b96;
     font-size: 25px;
@@ -361,6 +384,22 @@
 }
 .property .soldDiv .sold:nth-child(4){
     background-color: #9ECD2C1A;
+}
+
+.amountDiv{
+    width:100%;
+    background-color: #fff;
+}
+.amountDiv .amountValue{
+    width:100%;
+    padding:10px 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 10px;
+    font-weight: 600;
+    color:#555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .stat2{
     padding:30px;
@@ -463,7 +502,7 @@
     margin-right: 4px;
 }
 .stat2 .stat2Div .pro2 .todayMenu .select select, .stat2 .stat2Divv .pro2 .todayMenu .select select,
- .stat3 .sta32Div .pro2 .todayMenu .select select{
+ .stat3 .sta32Div .pro2 .todayMenu .select select, .weekSelect select{
     background-color: #56c5d040;
     border-radius: 4px;
     padding: 2px 0;
@@ -472,8 +511,8 @@
     cursor: pointer;
 }
 .stat2 .stat2Div .pro2 .todayMenu .select select option, .stat2 .stat2Divv .pro2 .todayMenu .select select option,
- .stat3 .stat3Div .pro2 .todayMenu .select select option{
-    background-color: red;
+ .stat3 .stat3Div .pro2 .todayMenu .select select option, .weekSelect select option{
+    background-color: #fff;
     border-radius: 8px;
     border:none;
     margin-top: 8px;
@@ -533,5 +572,4 @@
     display: flex;
     justify-content: center; 
 }
-
 
