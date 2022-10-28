@@ -90,7 +90,7 @@
     font-family: 'Mulish', sans-serif;
 }
 .values .valueDiv .val{
-    width:130px;
+    width:115px;
     height: 120px;
     border-radius: 15px;
     margin-left: 20px;
@@ -482,14 +482,14 @@ td img{
     color:#6d6e71;
     margin: 10px;
 }
-.tabDiv .tab .innerTab3{
+.tabDiv .tab .innerTab4{
     width:100%;
     margin-top: 15px;
     background-color: #6D6E710D;
     border-radius: 5px;
     padding: 20px 10px;
 }
-.tabDiv .tab .innerTab3 .tab3Head{
+.tabDiv .tab .innerTab4 .tab3Head{
     padding-bottom: 20px;
     border-bottom: 1px solid #A5EAF0;
 }

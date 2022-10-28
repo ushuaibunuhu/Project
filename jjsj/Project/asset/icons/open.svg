@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.785" height="23.435" viewBox="0 0 23.785 23.435">
+  <g id="Component_28_1" data-name="Component 28 – 1" transform="translate(0.75 0.75)">
+    <g id="Logout">
+      <path id="Stroke_1" data-name="Stroke 1" d="M14.518,5.476V4.369A4.37,4.37,0,0,0,10.148,0H4.368A4.369,4.369,0,0,0,0,4.369v13.2a4.369,4.369,0,0,0,4.368,4.369H10.16a4.357,4.357,0,0,0,4.357-4.356V16.461" transform="translate(0 0)" fill="none" stroke="#188b96" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Stroke_3" data-name="Stroke 3" d="M7.768.5H0" transform="translate(14.518 10.467)" fill="none" stroke="#188b96" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Stroke_5" data-name="Stroke 5" d="M0,0,3.472,3.456,0,6.914" transform="translate(18.813 7.511)" fill="none" stroke="#188b96" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+    <path id="Path_6742" data-name="Path 6742" d="M-32.552-70.771v-2.722l-1.266.015v5.92h-.05l-.645-1.943-.314-.947-.107-.323L-35.84-73.5h-1.435v2.727H-38.42v1.27h1.144v1.943H-38.42v1.27h1.144v2.653h1.332V-69.5h.05l.631,1.943.413,1.27.862,2.653h1.435v-2.653H-31.4v-1.27h-1.153V-69.5H-31.4v-1.27Z" transform="translate(42.59 79.535)" fill="#188b96"/>
+  </g>
+</svg>
