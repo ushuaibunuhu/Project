@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <title>Inventory</title>
     <link rel="stylesheet" href="inventory.css">
 </head>
@@ -56,7 +57,7 @@
         </div>
         <div class="val">
                 <div class="cust">Total Inventory Sales Value</div>
-                <div class="num"><span class="number">986</span> <sub>M</sub></div>
+                <div class="num">986 M</div>
         </div>
 
             <div class="val">
@@ -422,7 +423,15 @@
                                             <button><img src="../asset/icons/left.svg" alt="left"></button>
                                         </div>
                                     </div>
+                        </div> <!-- end of the popoup--->
+                        <div class="innerTab4">
+                            <div class="tab3Head">
+                                <div style="color:#188B96; font-size:12px; font-weight:600;font-family: 'Mulish', sans-serif;">Properties Price Trend <br>
+                               </div><br><br>
+                               <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                            </div>
                         </div>
+
                 </div>
             </div>
          <!--project Tab ends here-->
@@ -715,6 +724,31 @@
             tabDiv2.style.display = "table";
         });
         
+
+         //function for properties price trendS
+        var xValues = ['Q1-2021','Q2-2021','Q3-2021','Q1-2022','Q2-2022','Q3-2022','Q1-2023','Q2-2023','Q13-2023'];
+        var yValues = [2, 4, 3, 8, 6, 12, 5, 1, 10];
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+      fill: false,
+      lineTension: 0,
+      backgroundColor: "rgba(0,0,255,1.0)",
+      borderColor: "#188B96",
+      with:"100%",
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 0, max:16}}],
+    }
+  }
+});
         </script>
 </body>
 </html>
