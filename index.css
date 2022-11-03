@@ -14,10 +14,10 @@
     flex-wrap: nowrap;
 }
 .signIn{
-    width:60%;
+    width:50%;
     height:100%;
     background-position: center;
-    background-image: url(./asset/imgs/signIn.jpg);
+    background-image: url(./asset/imgs/signIn.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding:50px;

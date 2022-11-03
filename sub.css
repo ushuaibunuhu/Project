@@ -14,9 +14,9 @@
     flex-wrap: nowrap;
 }
 .signIn{
-    width:60%;
+    width:50%;
     height:100%;
-    background-image: url(../asset/imgs/signIn.jpg);
+    background-image: url(../asset/imgs/signIn.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
